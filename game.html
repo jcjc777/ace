@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS file structures** -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Brawler" rel="stylesheet">
+    
+    <title>A Cleaner Earth</title>
+     
+  </head>
+  <body id="gamebody">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">A Cleaner Earth</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="info.html">Info</a>
+          <a class="nav-item nav-link" href="impact.html">Your Impact</a>
+          <a class="nav-item nav-link" href="game.html">Clean Up Game</a>
+      
+         </div>
+      </div>
+    </nav>
+    
+ <div class="container" id= "gamediv" >
+   <h1 class="text-center">Help Us Clean Up The Beach</h1>
+   <h3 class = "text-center">Please Drag the Trash Into the Trash Can</h3>
+   <div id="congrads2">
+   <h3>Thank You for Your Help</h3>
+   </div>
+
+ <!-- ondragstart (on drag start) cancel default browser setting-->  
+  <div id = "pic1">
+    <img id="trash1" class="beachtrash img-fluid" src="img/cigbutts2.png" draggable="true" ondragstart="drag(event)" />   
+  </div>
+  <br>
+  <div id = "pic2">
+    <img id="trash2"  class="beachtrash img-fluid" src="img/seadebris.png" draggable="true" ondragstart="drag(event)" />  
+  </div>
+  <br>
+  <div id = "pic3">
+    <img id="trash3" class="beachtrash img-fluid" src="img/snacktrash2.png" draggable="true" ondragstart="drag(event)" />
+  </div>
+  <br>
+  <div id = "pic4">
+    <img id="trash4" class="beachtrash img-fluid" src="img/tire2.png" draggable="true" ondragstart="drag(event)" />
+  </div>
+  <br>
+  <div id = "pic5">
+    <img id="trash5" class="beachtrash img-fluid" src="img/dirtybottles2.png" draggable="true" ondragstart="drag(event)" />
+  </div>
+  
+
+<!-- ondragover invokes  function allowDrop()cancel browser default, function drop() is invoked to drop image-->
+
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="trashcan" class="mx-auto d-block img-fluid"  src="img/trashcan.png"/>
+  </div>
+  <br>
+</div>
+
+
+<footer class="container-fluid text-center emaildiv">
+  <h1>Make a difference!</h1>
+
+<h6>Want to do more for our oceans? Sign up for our mailing list and we will email you organizations where you can donate your time or money.</h6>
+    
+    <div id="congrads">
+        <h3>Thank You </h3>
+    </div>
+    <form >
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="Textarea">Comments</label>
+      <textarea class="form-control" id="Textarea" rows="4"></textarea>
+    </div>
+    <div class="d-flex justify-content-center ">
+      <button type="button" class="btn btn-success">Sign Up</button>
+    </div>
+  </form>
+  </footer>
+ </div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <!--  lastly **j*c**  -->
+  <script src="js/game.js"> </script>
+ </body>
+ </html>
